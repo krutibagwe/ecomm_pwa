@@ -4,11 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration'; // Import serviceWorkerRegistration
+import { BrowserRouter } from 'react-router-dom'; // Import BrowserRouter
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* Set the basename to the subpath where your app is deployed */}
+    <BrowserRouter basename="/ecomm_pwa">
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
@@ -19,4 +23,3 @@ serviceWorkerRegistration.register(); // Register the service worker
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
-
