@@ -1,0 +1,147 @@
+/* General Cart Styling */
+.cart-container {
+  padding: 80px 30px 30px; /* Adjusted padding to avoid navbar overlap */
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+/* Cart Items List */
+.cart-items-list {
+  list-style-type: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  gap: 15px; /* Added gap for spacing */
+}
+
+/* Product Image */
+.cart-item-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain; /* Ensures full product is visible */
+  border-radius: 8px;
+  background-color: #f0f0f0; /* Light gray background for contrast */
+}
+
+/* Product Details */
+.cart-item-details {
+  flex-grow: 1; /* Allows the text to take available space */
+  text-align: left;
+}
+
+.cart-item-name {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.cart-item-price {
+  font-size: 1rem;
+  color: #ff6f61;
+  font-weight: bold;
+}
+
+/* Remove Button */
+.remove-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.remove-btn:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+/* Total Price Styling */
+.total-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+}
+
+.total-price span {
+  color: #ff6f61;
+}
+
+/* Buttons Container */
+.cart-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Back to Shop & Proceed to Payment Buttons */
+.go-back-btn,
+.proceed-btn {
+  padding: 15px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.go-back-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.go-back-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.proceed-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.proceed-btn:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 15px;
+  }
+
+  .cart-item-img {
+    width: 100%;
+    height: auto;
+    max-width: 120px;
+    margin-bottom: 10px;
+  }
+
+  .cart-buttons {
+    flex-direction: column;
+  }
+
+  .go-back-btn,
+  .proceed-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
