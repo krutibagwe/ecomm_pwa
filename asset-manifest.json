@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/krutibagwe/ecomm_pwa/static/css/main.41a712a8.css",
+    "main.js": "/krutibagwe/ecomm_pwa/static/js/main.0977e7f0.js",
+    "static/js/453.f6199abb.chunk.js": "/krutibagwe/ecomm_pwa/static/js/453.f6199abb.chunk.js",
+    "index.html": "/krutibagwe/ecomm_pwa/index.html",
+    "main.41a712a8.css.map": "/krutibagwe/ecomm_pwa/static/css/main.41a712a8.css.map",
+    "main.0977e7f0.js.map": "/krutibagwe/ecomm_pwa/static/js/main.0977e7f0.js.map",
+    "453.f6199abb.chunk.js.map": "/krutibagwe/ecomm_pwa/static/js/453.f6199abb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.41a712a8.css",
+    "static/js/main.0977e7f0.js"
+  ]
+}
