@@ -2,11 +2,18 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./HomePage.css";
 
+// const products = [
+//   { id: 1, name: "Brown trousers", price: 10, img: "/images/pant1.jpg" },
+//   { id: 2, name: "Green Shirt", price: 20, img: "/images/shirt1.jpg" },
+//   { id: 3, name: "Brown Suit Jacket", price: 30, img: "/images/suit3.jpg" },
+// ];
+
 const products = [
-  { id: 1, name: "Brown trousers", price: 10, img: "/images/pant1.jpg" },
-  { id: 2, name: "Green Shirt", price: 20, img: "/images/shirt1.jpg" },
-  { id: 3, name: "Brown Suit Jacket", price: 30, img: "/images/suit3.jpg" },
+  { id: 1, name: "Brown trousers", price: 10, img: `${process.env.PUBLIC_URL}/images/pant1.jpg` },
+  { id: 2, name: "Green Shirt", price: 20, img: `${process.env.PUBLIC_URL}/images/shirt1.jpg` },
+  { id: 3, name: "Brown Suit Jacket", price: 30, img: `${process.env.PUBLIC_URL}/images/suit3.jpg` },
 ];
+
 
 const HomePage = () => {
   const [cart, setCart] = useState({});
